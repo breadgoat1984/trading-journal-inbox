@@ -1,1 +1,1 @@
-{"id":"2026-11-27-premarket-1300","kind":"premarket","scheduled_utc":"2026-11-27T13:00:00Z","started_utc":"2026-11-27T08:21:44Z","status":"running","start_lag_s":-16695}
+{"id":"2026-11-27-premarket-1300","kind":"premarket","scheduled_utc":"2026-11-27T13:00:00Z","started_utc":"2026-11-27T08:21:44Z","status":"ok","start_lag_s":-16695,"ended_utc":"2026-11-27T08:21:46Z","rows":0,"run_s":2}
