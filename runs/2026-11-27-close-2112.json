@@ -1,1 +1,1 @@
-{"id":"2026-11-27-close-2112","kind":"close","scheduled_utc":"2026-11-27T21:12:00Z","started_utc":"2026-11-27T21:13:09Z","status":"running","start_lag_s":69}
+{"id":"2026-11-27-close-2112","kind":"close","scheduled_utc":"2026-11-27T21:12:00Z","started_utc":"2026-11-27T21:13:09Z","status":"partial","start_lag_s":69,"ended_utc":"2026-11-27T21:15:44Z","rows":25,"run_s":155}
