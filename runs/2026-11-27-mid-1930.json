@@ -1,1 +1,1 @@
-{"id":"2026-11-27-mid-1930","kind":"mid","scheduled_utc":"2026-11-27T19:30:00Z","started_utc":"2026-11-27T19:32:03Z","status":"running","start_lag_s":123}
+{"id":"2026-11-27-mid-1930","kind":"mid","scheduled_utc":"2026-11-27T19:30:00Z","started_utc":"2026-11-27T19:32:03Z","status":"ok","start_lag_s":123,"ended_utc":"2026-11-27T19:32:22Z","rows":0,"run_s":19}
