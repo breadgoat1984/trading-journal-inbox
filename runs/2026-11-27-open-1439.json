@@ -1,1 +1,1 @@
-{"id":"2026-11-27-open-1439","kind":"open","scheduled_utc":"2026-11-27T14:39:00Z","started_utc":"2026-11-27T14:35:06Z","status":"running","start_lag_s":-233}
+{"id":"2026-11-27-open-1439","kind":"open","scheduled_utc":"2026-11-27T14:39:00Z","started_utc":"2026-11-27T14:35:06Z","status":"partial","start_lag_s":-233,"ended_utc":"2026-11-27T14:38:54Z","rows":5,"run_s":228}
