@@ -1,1 +1,1 @@
-{"id":"2026-11-27-fastwatch-0913","kind":"fastwatch","scheduled_utc":"2026-11-27T09:13:00Z","started_utc":"2026-11-27T14:13:50Z","status":"running","start_lag_s":18050}
+{"id":"2026-11-27-fastwatch-0913","kind":"fastwatch","scheduled_utc":"2026-11-27T09:13:00Z","started_utc":"2026-11-27T14:13:50Z","status":"partial","start_lag_s":18050,"ended_utc":"2026-11-27T14:35:52Z","rows":0,"run_s":1322}
