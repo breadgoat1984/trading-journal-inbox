@@ -7,7 +7,7 @@ The repo is the transit inbox: a Windows job on Sarantis's PC pulls it every 5 m
   python3 ghdb.py list <collection> [--prefix P] [--ids] [--where k=v] [--since k=v]
   python3 ghdb.py runlog start|end <pass_doc_id> ...        same as jdb.py runlog
 Reads see (1) this repo's <collection>/<id>.json, newest first, else (2) _seed/<collection>/<id>.json, the baseline
-snapshot of watch, setup, conids and tradable as of 2026-11-27. Minutes and older scans are NOT here.
+snapshot of watch, setup, conids and tradable as of 2026-11-27. Scans of the last 7 trading days, ext, notes, market and filings are seeded too. Minute docs are not here, but `list minutes --ids` also lists the ids already in his database.
 Env: GHDB_REPO (default /tmp/inbox). The repo is cloned on first use (shallow)."""
 import os, sys, json, re, time, random, subprocess
 
@@ -113,9 +113,14 @@ def get(col, i):
 
 def lst(col, prefix, ids_only, wh, si):
     check(col); ensure(); ps = paths(col)
+    if col == 'minutes' and ids_only and not (wh or si):  # ids of minute docs already in Sarantis's database (no content here)
+        mi = os.path.join(REPO, '_seed', 'minutes_ids.txt')
+        if os.path.exists(mi):
+            for k in open(mi).read().split():
+                ps.setdefault(k, None)
     for k in sorted(ps):
         if not k.startswith(prefix): continue
-        d = json.load(open(ps[k], encoding='utf-8')) if (wh or si or not ids_only) else None
+        d = json.load(open(ps[k], encoding='utf-8')) if (ps[k] and (wh or si or not ids_only)) else None
         if (wh or si) and not keep_doc(d, wh, si): continue
         print(k if ids_only else J({'id': k, 'doc': d}))
 
